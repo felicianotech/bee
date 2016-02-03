@@ -85,7 +85,6 @@ func runTest() {
 	}
 
 	var err error
-	return err
 	icmd := exec.Command("go", "test")
 	icmd.Stdout = os.Stdout
 	icmd.Stderr = os.Stderr
