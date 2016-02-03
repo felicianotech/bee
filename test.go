@@ -92,7 +92,7 @@ func runTest() {
 	err = icmd.Run()
 	ColorLog("[TRAC] ============== Test End ===================\n")
 
-	if err != nil {
+	if err == nil {
 		ColorLog("[ERRO] ============== Test failed ===================\n")
 		ColorLog("[ERRO] %s", err)
 		return
